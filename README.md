@@ -3,6 +3,18 @@
 为图片添加文字水印
 可设置文字**大小、颜色、旋转、间隔、透明度**
 
+# 电脑配置
+git clone 到根目录下面
+
+然后修改`.zshrc`文件,新增一下3行代码
+```
+#水印watermaker
+export PATH=$PATH:/Users/itgoyo/watermarker
+alias wm='python3 /Users/itgoyo/watermarker/marker.py'
+```
+
+使用方法:`rm mgy.jpg`,即可在`/Users/itgoyo/Documents/数码文章/watermaker`目录下面得到对应的水印图片
+
 # usage
 
 需要 PIL 库 `pip install Pillow`
