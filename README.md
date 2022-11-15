@@ -13,7 +13,7 @@ export PATH=$PATH:/Users/itgoyo/watermarker
 alias wm='python3 /Users/itgoyo/watermarker/marker.py'
 ```
 
-使用方法:`rm mgy.jpg`,即可在`/Users/itgoyo/Documents/数码文章/watermaker`目录下面得到对应的水印图片
+使用方法:`wm mgy.jpg`,即可在`/Users/itgoyo/Documents/数码文章/watermaker`目录下面得到对应的水印图片
 
 # usage
 
