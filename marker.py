@@ -127,18 +127,18 @@ def main():
     parse = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     parse.add_argument("-f", "--file", type=str,
                        help="image file path or directory")
-    parse.add_argument("-m", "--mark", type=str, help="watermark content")
-    parse.add_argument("-o", "--out", default="./output",
-                       help="image output directory, default is ./output")
-    parse.add_argument("-c", "--color", default="#8B8B1B", type=str,
-                       help="text color like '#000000', default is #8B8B1B")
-    parse.add_argument("-s", "--space", default=75, type=int,
+    parse.add_argument("-m", "--mark", type=str, default= "李狗蛋LGD",help="watermark content")
+    parse.add_argument("-o", "--out", default="/Users/itgoyo/Documents/数码文章/watermaker",
+                       help="image output directory, default is /Users/itgoyo/Documents/数码文章/watermaker")
+    parse.add_argument("-c", "--color", default="#ffffff", type=str,
+                       help="text color like '#ffffff', default is #ffffff")
+    parse.add_argument("-s", "--space", default=150, type=int,
                        help="space between watermarks, default is 75")
     parse.add_argument("-a", "--angle", default=30, type=int,
                        help="rotate angle of watermarks, default is 30")
-    parse.add_argument("--font-family", default="./font/青鸟华光简琥珀.ttf", type=str,
+    parse.add_argument("--font-family", default="/Users/itgoyo/watermarker/font/青鸟华光简琥珀.ttf", type=str,
                        help=textwrap.dedent('''\
-                       font family of text, default is './font/青鸟华光简琥珀.ttf'
+                       font family of text, default is '/Users/itgoyo/watermarker/font/青鸟华光简琥珀.ttf'
                        using font in system just by font file name
                        for example 'PingFang.ttc', which is default installed on macOS
                        '''))
